@@ -1,55 +1,155 @@
-# Amazon India Product Analytics Dashboard
+# 🛒 Amazon India Product Analytics Dashboard
 
-A full-stack data analysis project built with **Streamlit + Plotly** on the Amazon India product dataset (1,465 products).
+An interactive data analytics dashboard built using **Python, Streamlit, Pandas, and Plotly** to analyze Amazon India product data and generate actionable business insights.
 
-## 📁 Project Structure
-```
-amazon_dashboard/
-├── app.py              ← Main Streamlit dashboard
-├── requirements.txt    ← Python dependencies
-├── amazon.csv          ← Raw dataset
-├── amazon_clean.csv    ← Cleaned dataset (pre-processed)
-└── README.md
-```
+## 🚀 Live Demo
 
-## 🚀 Run Locally
+**Dashboard:** https://amazon-dashboard-39r39hqbqoedlrsxfbpaww.streamlit.app/
+
+---
+
+## 📌 Project Overview
+
+This project analyzes **1,465 Amazon India products** to uncover pricing trends, customer rating patterns, discount strategies, and category-level business insights.
+
+The dashboard helps identify:
+
+* High-performing product categories
+* Hidden gem products
+* Pricing vs Rating relationships
+* Fake discount patterns
+* Best value-for-money products
+* Category-wise performance metrics
+
+---
+
+## 📊 Dashboard Preview
+
+### Overview Dashboard
+
+![Overview](screenshots/overview.png)
+
+### Pricing Analysis
+
+![Pricing](screenshots/pricing.png)
+
+### Ratings & Reviews
+
+![Ratings](screenshots/ratings.png)
+
+### Product Discount
+
+![Discount](screenshots/discount.png)
+
+---
+
+## ✨ Key Features
+
+### 📊 Overview Analysis
+
+* Product category distribution
+* Price segmentation analysis
+* Product count by category
+
+### 💰 Pricing Intelligence
+
+* Price vs Rating visualization
+* Premium vs Budget product comparison
+* Price distribution analysis
+
+### ⭐ Ratings & Reviews
+
+* Customer rating analysis
+* Popularity score calculation
+* Hidden gem identification
+
+### 🏷️ Discount Intelligence
+
+* Discount percentage analysis
+* Fake MRP detection
+* Top discounted products
+
+### 🔍 Product Explorer
+
+* Search products by keyword
+* Dynamic filtering
+* Category-based exploration
+
+### 📈 Business Insights
+
+* Correlation analysis
+* Value-for-money scoring
+* Strategic recommendations
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* Streamlit
+* Pandas
+* NumPy
+* Plotly
+* Matplotlib
+
+---
+
+## 📂 Dataset
+
+Amazon India Product Dataset containing:
+
+* Product Name
+* Category
+* Actual Price
+* Discounted Price
+* Ratings
+* Rating Count
+* Discount Percentage
+
+Total Records: **1,465 Products**
+
+---
+
+## 🎯 Business Problems Solved
+
+### 1. Fake Discount Detection
+
+Identifies products with unusually high discount percentages.
+
+### 2. Hidden Gem Discovery
+
+Finds highly-rated products with strong discounts but lower visibility.
+
+### 3. Value-for-Money Scoring
+
+Ranks products based on quality relative to price.
+
+### 4. Price-Quality Analysis
+
+Determines whether expensive products actually receive better ratings.
+
+### 5. Category Benchmarking
+
+Compares categories across pricing, ratings, and discount performance.
+
+---
+
+## ⚙️ Installation
 
 ```bash
-# 1. Install dependencies
+git clone https://github.com/Raushanritik30891/AMAZON-DASHBOARD.git
+
+cd AMAZON-DASHBOARD
+
 pip install -r requirements.txt
 
-# 2. Run the dashboard
 streamlit run app.py
 ```
-The app opens at http://localhost:8501
 
-## ☁️ Deploy on Streamlit Cloud (Free)
+---
 
-1. Push this folder to a **GitHub repo**
-2. Go to https://share.streamlit.io
-3. Click "New app" → connect your GitHub repo
-4. Set **Main file path** = `app.py`
-5. Click **Deploy** — live in ~2 minutes!
+## 👨‍💻 Author
 
-> **Note:** Put `amazon.csv` in the same folder as `app.py`.
-> Streamlit Cloud reads files relative to `app.py`.
+Ritik Raushan
 
-## 📊 Dashboard Pages
-
-| Page | What It Solves |
-|------|---------------|
-| 📊 Overview | Category distribution, price segments |
-| 💰 Pricing Analysis | Price vs rating, box plots, expensive/cheap extremes |
-| ⭐ Ratings & Reviews | Rating tiers, popularity scores, hidden gems |
-| 🏷️ Discount Intelligence | Fake MRP detection, hottest deals |
-| 🔍 Product Explorer | Search + filter any product |
-| 📈 Business Insights | Correlation matrix, value scores, strategic recommendations |
-
-## 🔑 Key Business Problems Solved
-
-1. **Fake MRP detection** — flags products with ≥75% discounts
-2. **Hidden gem discovery** — high rating + high discount + low visibility
-3. **Value-for-money scoring** — rating ÷ log(price)
-4. **Price-quality paradox** — does higher price = better rating?
-5. **Category benchmarking** — which category offers best deals?
-"# AMAZON-DASHBOARD" 
+Aspiring Data Analyst | Machine Learning Enthusiast | AI Developer
